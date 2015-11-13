@@ -1,13 +1,19 @@
 <div class="container">
-  <h1>Student</h1>
+  <h3>Students</h3>
   <div class="row">
     <% students.forEach(function(student){ %>
-    <div class="col s4">
-      <a href="/students/<%=student.id %>"><%= student.photo %></a>
-      <h3><%= student.firstName %></h3>
-      <h6>Year: <%= student.year %></h6>
-      <h6>quote: <%= student.quote %></h6>
+    <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <a href="/students/<%=student.id %>"><img class="responsive-img" src="<%= student.photo %>"></a>
+          <span class="card-title"><%= student.firstName %></span>
+        </div>
+        <div class="card-content">
+          <p>Year: <%= student.year %></p><br>
+          <p>quote: <%= student.quote %></p>
+        </div>
+      </div>
     </div>
+    <% }); %>
   </div>
-  <% }); %>
-</div
+</div>

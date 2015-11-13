@@ -8,11 +8,11 @@ var students = [
   {
     firstName: "Kwakes",
     lastName: "Prempeh",
-    age: "30",
+    age: "33",
     year: "WDI 16",
     quote: "No idea is original",
     info: "kwakes@me.com",
-    photo: "https://drive.google.com/open?id=0B4SAri4crq9_NWVNdGtQQmstdGs"
+    photo: "http://2dopeboyz.com/wp-content/uploads/2014/06/2pac-6.jpg"
   }
 ]
 

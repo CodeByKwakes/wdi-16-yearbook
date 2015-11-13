@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Edit Student</h1>
+  <form method="post" action="/students/<%= student.id %>">
+    <input type="hidden" name="_method" value="patch">
+    <input type="text" name="student[name]" placeholder="Enter a name" value="<%= student.name %>">
+    <input type="text" name="student[color]" placeholder="Enter a color" value="<%= student.color %>">
+    <input type="text" name="student[flavour]" placeholder="Enter a flavour" value="<%= student.flavour %>">
+    <input type="submit"class="btn" value="edit">
+  </form>
+</div>

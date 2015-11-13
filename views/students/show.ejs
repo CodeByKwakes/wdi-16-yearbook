@@ -1,0 +1,28 @@
+<div class="container">
+  <h1><%= student.firstName %> <%= student.lastName %></h1>
+  
+  <div class="row">
+    <div class="col s6">
+      <div class="card large">
+        <img class="responsive-img" src="<%= student.photo %>"></a>
+      </div>
+    </div>
+
+    <div class="col s6">
+      <ul>
+        <li>Age: <%= student.age %></li>
+        <li>Quote: <%= student.quote %></li>
+      </ul>
+    </div>
+    
+    <div class="col s12">
+      <a href="/students"class="btn">Back</a>
+      <a href="/students/<%= student.id %>/edit"class="btn">Edit</a>
+      <form method="post" action="/students/<%= student.id %>">
+        <input type="hidden" name="_method" value="delete">
+        <button class="btn">Delete</button>
+      </form>
+    </div>
+
+  </div>
+</div>
