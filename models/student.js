@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 
 var studentSchema = mongoose.Schema({
-  name: String,
+  firstName: String,
+  lastName: String,
   age: String,
   year: String,
   quote: String,
@@ -9,5 +10,5 @@ var studentSchema = mongoose.Schema({
   photo: String
 });
 
-module.exports = mongoose("Student", studentSchema);
+module.exports = mongoose.model("Student", studentSchema);
 
