@@ -1,6 +1,6 @@
 var Student = require('../models/student');
 
-function candiesIndex(req, res){
+function studentsIndex(req, res){
   Student.find({}, function(err, students){
     if (err) return res.render('error', { message: "Wrong! You have been expelled!!!" + err });
     res.render('students/index', { students: students });

@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Student</h1>
+  <div class="row">
+    <% students.forEach(function(student){ %>
+    <div class="col s4">
+      <a href="/students/<%=student.id %>"><%= student.photo %></a>
+      <h3><%= student.firstName %></h3>
+      <h6>Year: <%= student.year %></h6>
+      <h6>quote: <%= student.quote %></h6>
+    </div>
+  </div>
+  <% }); %>
+</div
